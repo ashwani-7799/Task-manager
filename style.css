@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.buttondiv{
+    text-align: center;
+    font-weight: 500;
+}
+
+.addbutton{
+    position: relative;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .addbutton:hover {
+    background-color: #48A300;
+    ;
+  }
+
+  .spa{
+    font-size: 16px;
+  }
+
+
+
+
+main{
+    
+    padding: 0 16px 32px;
+}
+
+body{
+    background-color:rgba(72 , 163 , 0 , 0.07);
+}
+
+
+.title{
+    font-size: 64px;
+    color: #48A300;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* h1{
+    font-size: 64px;
+    color: #48A300;
+} */
+
+.title span{
+
+    color : #61481c
+
+}
+
+.app-container{
+    background-color: #FBFBFB;
+    /* background-color: red; */
+    max-width: 660px;
+    margin:  auto; 
+    /* margin-inline: auto; */
+    border-radius: 15px;
+    box-shadow:  0 0  8px  0px rgba(0 , 0 ,0 , 0.1);
+    padding: 32px  48px;
+    /* display: flex; */
+}
+
+.sun-image{
+ height : 45px;
+ /* vertical-align: text-bottom;  */
+ /* vertical-align: bottom; */
+ /* vertical-align: text-top; */
+ /* vertical-align: baseline; */
+ vertical-align: middle;
+ /* background-color: red; */
+ margin-left: 7px;
+ animation: rotate 7s linear infinite; 
+ /* backdrop-filter: blur(10px); */
+
+}
+
+.progress-level{
+    font-size: 14px;
+    color: #858585;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    overflow: hidden;
+} 
+
+
+.progress-bar{
+    height: 30px;
+    background-color: rgba(72 , 163 , 0 , 0.01);
+    border-radius: 15px;
+    margin-bottom: 42px;
+    background-color: rgb(226, 252, 226);
+    border: 1px solid black;
+    overflow: hidden; 
+}
+
+.progress-value{
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #48A300;
+    font-size: 10px;
+    font-weight: 500;
+    color: #eeffe0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+    /* visibility: hidden; */
+    /* padding-left: 20px;  */
+    /* margin: 25px 0; */
+}
+
+.progress-value span{
+    padding-left: 20px;
+    min-width: max-content;
+    overflow: hidden;
+   
+}
+
+.error-label{
+    color: #ff5151; 
+    font-size: 12px; 
+    margin-top: 14px;
+    display: none;  
+    /* background-color: red; */
+    margin: -34px auto  13px 5px;
+
+}
+
+
+ .show-error .error-label{
+    display: block;
+} 
+
+
+.goal-container{
+    border: 1px solid rgba(0 , 0 , 0 , 0.1);
+    border-radius: 17px;
+    height: 82px; 
+    /* width: 50px; */
+    display: flex;
+    align-items: center;
+    padding: 0 22px;
+    background-color: #ffffff;
+    /* margin-top: 38px; */
+    margin-bottom: 42px;
+
+    /* padding: 40px 22px; */
+}
+
+.custom-checkbox{
+    height: 24px;
+    width: 24px;
+    border: 2px solid rgba(0 , 0 , 0 , 0.1);
+    border-radius: 50%; 
+    flex-shrink: 0;
+    /* display: inline-block;
+    vertical-align: middle; */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.goal-input{
+    border: none; 
+    outline: none;
+    padding-left: 22px;
+    font-family: inherit;
+    font-size: 16px;
+    /* flex-grow: 1; */
+    align-self: stretch;
+    width: 100%;
+    font-weight: 500; 
+    color: #48A300;
+
+}
+
+.goal-input ::placeholder{
+    color: #d9d9d9
+}
+
+.quote{
+    font-weight: 500;
+    /* font-size: 16px; */
+       text-align: center;
+}
+
+.subtitle{
+    height: 50px;
+} 
+
+.love{
+    font-size: 10px;
+    font-weight: 500;
+    text-align: center;
+    color: #858585;
+    margin-top: 64px;
+}
+
+
+
+.completed .custom-checkbox{
+    background-color: #48A300;
+    border-color: #48A300;
+}
+
+.completed .check{
+    display: block
+}
+
+
+.completed .goal-input{
+    color: #48A300;
+    text-decoration: line-through;
+}
+
+.completed .check{
+    display: block;
+  }
+
+
+
+
+
+
+@media (max-width: 768px){
+    title{
+        font-size: 32px;
+
+    }
+
+    .app-container{
+        padding: 16px 32px;
+    } 
+
+    .goal-container{
+        height: 64px;
+        margin-bottom: 24px;
+        border-radius: 12px;
+
+    }
+
+    .custom-checkbox{
+        height: 20px;
+        width: 20px;
+    }
+
+    .love{
+        margin-top: 32px;
+    }
+
+    .progress-bar{
+        height: 24px;
+    }
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+
+
